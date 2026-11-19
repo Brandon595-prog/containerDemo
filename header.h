@@ -88,7 +88,32 @@ public:
 		return elem[index];
 
 	}
+
+
+	void pop_back() {
+	if (array_size <= 0) 
+	{
+		throw std::out_of_range("No data in the vector");
+
+	}
+		array_size--; 
+	}
+
+	bool empty() const  {
+		if (array_size == 0) {
+		return true;
+	} else {
+	return false;
+	}
+	}
+
 	
+	void clear() {
+	
+	array_size = 0;
+	
+
+	}
 
 };
 
